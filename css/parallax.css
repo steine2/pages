@@ -1,0 +1,96 @@
+.parallax {
+  
+  background-image: url("https://www.udiscovermusic.com/wp-content/uploads/2020/02/Lil-Baby-Black-Vest.jpg");
+
+  
+  min-height: 100px; 
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  
+  background-image: url("https://images4.alphacoders.com/102/thumb-1920-1026348.png");
+
+  
+  min-height: 300px; 
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  
+  background-image: url("bg_parallax.png");
+
+  
+  min-height: 300px; 
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+.parallax3 {
+  
+  background-image: url("https://www.wallpapertip.com/wmimgs/41-414370_hd-hip-hop.png");
+
+  
+  min-height: 300px; 
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.hover_content
+{
+  margin-top: 10em;
+  margin-bottom: 35em;
+  width: 70%;
+}
+
+.hover_content2
+{
+  margin-top: 3em;
+  margin-bottom: 20em;
+  width: 70%;
+}
+
+
+.hover_content3
+{
+  margin-top: 3em;
+  margin-bottom: 20em;
+  width: 70%;
+}
+
+
+
+ .bg-hover
+ {
+  background-color: rgba(0,0,0, 0.4); 
+   height: 100%;
+  
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ }

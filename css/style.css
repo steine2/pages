@@ -1,0 +1,317 @@
+/* font utilisé sur le body */
+@font-face {
+    font-family: 'UrbanJungleDEMO';
+    src: url('UrbanJungleDEMO.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'urbanlife';
+    src: url('urbanlife.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body
+{
+	font-family: "UrbanJungleDEMO";
+	letter-spacing: .2rem;
+}
+
+.font
+{
+	font-family: 'Urbanlife';
+	font-size: 200px;
+	color: black;
+}
+
+
+
+a
+{
+	font-weight: bold;
+	font-size: 200%;
+}
+
+
+/* text en blanc */
+.text-w
+{
+	color: #fff;
+	font-size: 50px;
+}
+
+.text-w2
+{
+	color: #fff;
+	font-size: 50px;
+}
+
+
+.bg
+{
+	background-image: url("../img/bg_4.jpg");
+	height: 800px;
+	background-size: cover;
+
+}
+
+/* background pour la section artiste */
+.bg_artiste
+{
+	background-image: url("../img/bg_4.jpg");
+	height: 1200px;
+	background-size: cover;
+}
+
+/* background pour la section freestyle */
+.bg_freestyle
+{
+	background-image: url("../img/bg_4.jpg");
+	height: 1000px;
+	background-size: cover;
+}
+
+h5
+{
+	 animation: titleAnimation 36s linear infinite 0s;
+   font-size: 50px;
+   color: #fff;
+   letter-spacing: .5rem;
+}
+
+/* fade pour animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.font-caption
+{
+	font-size: 150px;
+}
+
+/* animation pour le titre sur le background en parallax */
+h1 {	
+	   position: absolute;
+     bottom: 10px;
+    left: 0px;
+      text-align: right;
+      
+text-align: center;
+  font-weight: bold;
+  position: relative;
+   animation: titleAnimation 36s linear infinite 0s;
+   font-size: 150px;
+   color: #fff;
+   letter-spacing: .5rem;
+
+}
+
+@keyframes titleAnimation { 
+	0% {
+	    opacity: 0;
+	    transform: translateX(200px);
+	}
+	8% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	17% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	19% {
+	    opacity: 0;
+	    transform: translateX(-400px);
+	}
+	25% { opacity: 0 }
+	100% { opacity: 0 }
+}
+
+
+/* CSS pour le menu nav anchor */
+.navigation {
+	
+  z-index: 10;
+  position: fixed;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 50px;
+
+}
+.navigation ul {
+  list-style: none;
+
+}
+.navigation li {
+  
+  margin: 15px 0;
+}
+.navigation li a {
+color: #fff;
+text-decoration: none;
+
+  transition: .2s ease;
+}
+.navigation li a:hover{
+  color: gray;
+
+}
+
+
+/* contenu pour la section artiste */
+.container-artiste {
+  position: relative;
+  width: 50%;
+}
+
+.image-artiste {
+  
+  width: 250px;
+  height: 300px;
+}
+
+.overlay-artiste {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0, 0.4);
+  overflow: hidden;
+  width: 250px;
+  height:0;
+  transition: .5s ease;
+}
+
+.container-artiste:hover .overlay-artiste {
+  bottom: 0;
+  height: 100%;
+}
+
+.text-artiste {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+footer
+{
+	background-color: black;
+	height: 200px;
+
+}
+
+@media screen and (max-width: 768px)
+{
+  
+.navigation
+{
+  font-size: 10px;
+  color: rgba(0,0,0, 0.4);
+
+}
+
+.bg
+{
+  height: 300px;
+
+}
+
+.font
+{
+  font-size: 80px;
+}
+
+.font_street
+{
+  font-size: 80px;
+}
+
+.text-w, .text-w2
+{
+  font-size: 20px;
+}
+
+.mediaquerie_img
+{
+  width: 250px;
+  height: 300px;
+}
+
+.font-caption
+{
+  font-size: 10px;
+}
+
+.overlay-artiste {
+  
+  overflow: hidden;
+  width: 150px;
+  
+}
+
+.mediaqueries_p
+{
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-artiste {
+  color: white;
+  font-size: 10px;
+  
+ 
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+figure
+{
+  font-size: 10px;
+  height: 5px;
+}
+
+.image-artiste
+{
+  width: 150px;
+  height: 150px;
+}
+
+h1
+{
+margin-top: 10rem;
+  font-size: 50px;
+}
+
+} 
