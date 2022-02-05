@@ -1,3 +1,51 @@
+
+.bg-img {
+  /* The image used */
+  background-image: url("../img/bg_header.jpg");
+
+  min-height: 880px;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ 
+
+}
+
+/* Position the navbar container inside the image */
+
+/* The navbar */
+.topnav {
+  display: flex;
+  
+  justify-content: center;
+  
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+
+
+
 .parallax {
   
   background-image: url("https://www.udiscovermusic.com/wp-content/uploads/2020/02/Lil-Baby-Black-Vest.jpg");
@@ -6,10 +54,12 @@
   min-height: 100px; 
 
   
-  background-attachment: fixed;
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  position: relative;
 }
 
 .parallax2 {
@@ -17,7 +67,7 @@
   background-image: url("https://images4.alphacoders.com/102/thumb-1920-1026348.png");
 
   
-  min-height: 300px; 
+  min-height: 800px; 
 
   
   background-attachment: fixed;
@@ -68,9 +118,10 @@
 
 .hover_content2
 {
-  margin-top: 3em;
-  margin-bottom: 20em;
-  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 
@@ -86,11 +137,11 @@
  .bg-hover
  {
   background-color: rgba(0,0,0, 0.4); 
-   height: 100%;
+   height: 115%;
   
+   position: absolute;
+  
+  width: 100%;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  
  }
